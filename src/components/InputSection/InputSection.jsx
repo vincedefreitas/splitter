@@ -4,6 +4,8 @@ import TipAmountButton from "./TipAmountButton";
 
 function InputSection() {
   const [tipPercentage, setTipPercentage] = useState(0);
+  const [bill, setBill] = useState("");
+  const [numOfPeople, setNumOfPeople] = useState("");
 
   const handleClick5Percent = (event) => {
     setTipPercentage(5);
@@ -24,9 +26,19 @@ function InputSection() {
   const handleClick50Percent = (event) => {
     setTipPercentage(50);
   };
+
+  const handleBillChange = (event) => {
+    setBill(event.target.value);
+  };
+
+  const handlePeopleChange = (event) => {
+    setNumOfPeople(event.target.value);
+  };
+
   return (
     <section className="w-6/12 h-full flex flex-col justify-around">
-      <Input labelText="Bill" />
+      <Input labelText="Bill" handleChange={handleBillChange} />
+      <p>{bill}</p>
       <div>
         <p className="text-slate-600 mb-2">Select Tip %</p>
         <div className="grid grid-cols-3 gap-4">
@@ -54,7 +66,8 @@ function InputSection() {
           <p>The tip % will be {tipPercentage}%</p>
         </div>
       </div>
-      <Input labelText="Number of People" />
+      <Input labelText="Number of People" handleChange={handlePeopleChange} />
+      <p>{numOfPeople}</p>
     </section>
   );
 }
