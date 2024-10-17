@@ -1,8 +1,8 @@
-function Input() {
+function Input({ labelText }) {
   return (
     <div className="mt-4 flex flex-col gap-1">
       <label htmlFor="text" className="text-slate-600">
-        Bill
+        {labelText}
       </label>
       <input
         id="text"
