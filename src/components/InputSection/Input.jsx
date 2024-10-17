@@ -8,7 +8,6 @@ function Input({ labelText }) {
         id="text"
         type="text"
         className="p-3 bg-sky-100 rounded-md text-slate-400"
-        value="$"
       />
     </div>
   );
