@@ -1,4 +1,4 @@
-function Input({ labelText, handleChange }) {
+function Input({ labelText, handleChange, value }) {
   return (
     <div className="mt-4 flex flex-col gap-1">
       <label htmlFor="text" className="text-slate-600">
@@ -9,6 +9,7 @@ function Input({ labelText, handleChange }) {
         type="text"
         className="p-3 bg-sky-100 rounded-md text-slate-400"
         onChange={handleChange}
+        value={value}
       />
     </div>
   );

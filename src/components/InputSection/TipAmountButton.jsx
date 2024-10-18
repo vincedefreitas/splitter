@@ -1,6 +1,4 @@
 function TipAmountButton({ buttonText, clickHandler }) {
-  let count = 0;
-
   return (
     <button
       onClick={clickHandler}
