@@ -62,7 +62,7 @@ function Calculator() {
   };
 
   return (
-    <div className="w-8/12 h-3/5 bg-white rounded-3xl p-10 flex gap-10">
+    <div className="w-11/12 max-w-5xl lg:h-3/5 bg-white rounded-3xl p-4 lg:p-10 flex flex-col lg:flex-row gap-10 items-center">
       <InputSection
         people={handlePeopleChange}
         bill={handleBillChange}

@@ -13,9 +13,9 @@ function InputSection({
   numOfPeopleInput,
 }) {
   return (
-    <section className="w-6/12 h-full flex flex-col justify-around">
+    <section className="w-11/12 lg:w-6/12 h-full flex flex-col justify-around">
       <Input labelText="Bill" handleChange={bill} value={billInputValue} />
-      <div>
+      <div class="mt-4">
         <p className="text-slate-600 mb-2">Select Tip %</p>
         <div className="grid grid-cols-3 gap-4">
           <TipAmountButton buttonText={"5%"} clickHandler={tip5Percent} />
