@@ -5,7 +5,7 @@ function DisplayItem({ displayText, amount }) {
         <p className="text-white">{displayText}</p>
         <p className="text-cyan-500">/ person</p>
       </div>
-      <p className="text-cyan-300 text-5xl">${amount}</p>
+      <p className="text-cyan-300 text-5xl">£{amount}</p>
     </div>
   );
 }
