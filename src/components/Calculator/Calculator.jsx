@@ -42,7 +42,9 @@ function Calculator() {
   };
 
   const calculateBillTotal = () => {
-    const billTotal = bill / numOfPeople;
+    const tip = Number(calculateTipTotal());
+    const billTotal = bill / numOfPeople + tip;
+    console.log(typeof billTotal);
     if (!isFinite(billTotal)) {
       return "0.00";
     } else {
